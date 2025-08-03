@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- inspo : doqmeat, juglone, chicagosoftcore, vulpecula, ughbees -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>beorisu</title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://web.archive.org/web/20230722202200cs_/https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="" crossorigin="anonymous">
+    <style>
+      .link {
+        position: relative;
+        transition: clip-path 275ms ease;
+      }
+      .link:hover span::before,
+      .link:focus span::before {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+      }
+      .link span {
+        position: relative;
+        display: inline-block;
+      }
+      .link span::before {
+        position: absolute;
+        content: attr(data-content);
+        text-decoration: underline;
+        clip-path: polygon(0 0, 0 0, 0% 100%, 0 100%);
+        transition: clip-path 275ms ease;
+      }
+      span.dashed::before {
+        text-decoration-style: solid;
+      }
+      #grayscale img {
+        filter: grayscale(0%);
+        transition: .25s ease-out;
+      }
+      #grayscale:hover img {
+        filter: grayscale(100%);
+        transition: .25s ease-in;
+      }
+      #macarons img {
+        -webkit-animation: pop 2s ease-in-out infinite alternate;
+        animation: pop 2s ease-in-out infinite alternate;
+        -moz-animation: pop 2s ease-in-out infinite alternate;
+      }
+      @keyframes pop {
+        from { transform: scale(0.98); }
+        50% { transform: scale(1); }
+        to { transform: scale(0.98); }
+     
+    }
+
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header" style="height: 290px;"></div>
+      <hr>
+      <nav id="navbar">
+        <ul>
+          <li><a href="https://beorisu.neocities.org/#">home</a></li>
+          <li><a href="https://beorisu.neocities.org/aboutme#">about</a></li>
+          <li><a href="https://beorisu.neocities.org/art#">art</a></li>
+          <li><a href="https://beorisu.neocities.org/music#">music</a></li>
+          <li><a href="https://beorisu.neocities.org/film#">film</a></li>
+        </ul>
+      </nav>
+      <div id="flex">
+        <aside id="leftSidebar">
+          <!-- links uses a span class as you can see; in order for it to work properly, the text in the span data-content line needs to match the text you're making a link.-->
+          <h2 class="link" style="text-align:center;"><span class="dashed" data-content="Welcome!"><b>Welcome!</b></span></h2>
+          <div id="grayscale">
+            <img src="https://i.pinimg.com/736x/1c/36/9e/1c369e0f59e17293690857ff2076ddf8.jpg" alt="Girl and a doe" width="200" height="300">
+          </div>
+          <div class="box">
+            <div id="lol">
+              <img class="img2" src="https://assets.crownnote.com/s3fs-public/a1417874505_10.jpeg">
+              <img class="img1" src="https://web.archive.org/web/20220514070535im_/https://cdn.discordapp.com/attachments/822589056256311328/890714753780031488/image0.png">
+            </div>
+            <audio id="audio" src="https://files.catbox.moe/p7kmhg.mp3"></audio>
+            <p style="font-size: 16px; text-align: center; color: #3a3b2e;">
+              days go by - men i trust <br> click to play!
+            </p>
+            <script>
+              document.getElementById("lol").onclick = function() {
+                var audio = document.getElementById("audio");
+                if (audio.paused) audio.play();
+                else audio.pause();
+              };
+            </script>
+        </div>
+          <!-- FC2 Counter  Starts here -->
+        <div class="counter " style="position: relative; left: 70px;" ><script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=40490041&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=40490041&main=1" /></noscript>
+          <!-- FC2 Counter  Ends here -->
+        </div>
+        </aside>
+        <main>
+          <h3 style="position: relative; left: 65px;color: #2e2116;">hello &amp; welcome to my site! (´꒳`)♡</h3>
+          <p style="margin-top: 69px;position: relative; left: 65px;">
+            this is somewhat of an experiemental project for me. i hope to improve my HTML, <br>Javascript, and CSS skills throughout my journey on this website. essentially i <br> just want to make cool stuff with code... (also please view this site on a laptop <br>or screen that is NOT a mobile device)
+          </p>
+          <p style="position: relative; left: 65px;"> moreover, i hope to document the growth of my web design skills as well as my<br>other mudane passions. as you can see there are tabs relating
+          to my relevant <br> hobbies: art, music, films! i want to be consistent with this page and have it <br> serve as a digital journal (＾▽＾) i hope to learn lots and 
+          find other cool <br> artists/creatives on here, bye bye</p>
+          <img style="width: 240px; height: 120px; position: absolute; top: 320px; left: 210px" src='https://beorisu.neocities.org/e7242a7abf827010b61d0635e8571bd8-removebg-preview.png'>
+          <div id="macarons">
+            <img style="width: 600px; height: 120px; position: absolute; top: 480px; left: 25px" src='https://beorisu.neocities.org/6254ee9d997e82eb52ec90a4445d3b30-removebg-preview.png'>
+          </div>
+        </main>
+      </div>
+      <hr>
+      <footer id="footer">
+        thank you for opening my site ^_^ % feel free to leave a message below !!
+      </footer>
+      <div class="cbox">
+        <iframe src="https://www3.cbox.ws/box/?boxid=3548176&boxtag=s2ti1k" width="100%" height="450" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+      </div>
+    </div>
+  </body>
+</html>
